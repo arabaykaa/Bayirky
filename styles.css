@@ -91,11 +91,11 @@ a {
 
 .main__bg_text_block {
   min-height: 100dvh;
-  background-color: rgba(236, 235, 232, 1);
+  /* background-color: rgba(236, 235, 232, 1); */
   /* background: #fff; */
-  /* background-image:
+  background-image:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("assets/new-bg.jpg"); */
+    url("assets/new-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -225,7 +225,7 @@ a {
 
 .main__next_btn {
   position: absolute;
-  color: #d8b66e;
+  /* color: #d8b66e; */
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
@@ -233,13 +233,13 @@ a {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
-  /* color: #fff; */
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.5px;
   cursor: pointer;
   transition: transform 0.2s ease;
-  animation: pulse_black 2s infinite;
+  animation: pulse 2s infinite;
 }
 
 @media (max-width: 500px) {
@@ -320,9 +320,9 @@ a {
       transparent 24%
     ),
     #000000; */
-  background-image:
+  /* background-image:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url("assets/new-bg.jpg");
+    url("assets/new-bg.jpg"); */
   color: #ffffff;
   padding: 72px 0 80px;
 }
