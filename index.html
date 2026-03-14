@@ -9,17 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?
+family=Inter+Tight:ital,wght@0,100..900;1,100..900&
+family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&
+family=Playfair+Display:ital,wght@0,400..900;1,400..900&
+family=Montserrat:wght@300;400;500;600;700&
+family=Rubik:ital,wght@0,300..900;1,300..900&
+family=Roboto:wght@300;400;500;700&
+family=Manrope:wght@200..800&
+family=Cormorant:ital,wght@0,300..700;1,300..700&
+family=Lora:ital,wght@0,400..700;1,400..700&
+family=Open+Sans:wght@300..700&
+display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    /> -->
     <title>BAYIRKY</title>
   </head>
   <body id="top">
@@ -50,44 +53,85 @@
               class="main__logo"
             />
             <h6 class="main__desc">Окунись в мир кочевников</h6>
+            <h6 class="main__desc">Көчмөндөрдүн дүйнөсүнө сүңгү</h6>
+            <h6 class="main__desc">Immerse yourself in the world of nomads</h6>
           </div>
           <a href="#info" class="main__next_btn no_select">записаться</a>
+          <ul class="test_change_font_buttons no_select">
+            <li><button data-font="playfair">Playfair</button></li>
+            <li><button data-font="ptserif">PT Serif</button></li>
+            <li><button data-font="montserrat">Montserrat</button></li>
+            <li><button data-font="cormorant">Cormorant</button></li>
+            <li><button data-font="roboto">Roboto</button></li>
+            <li><button data-font="opensans">Open Sans</button></li>
+            <li><button data-font="lora">Lora</button></li>
+            <li><button data-font="rubik">Rubik</button></li>
+            <li><button data-font="manrope">Manrope</button></li>
+          </ul>
         </div>
 
-        <!-- <section id="work" class="container work__container">
-          <h3 class="section_title">наши костюмы</h3>
+        <section id="work" class="container work__container">
+          <h3 class="section_title">КОЛЛЕКЦИЯ КОСТЮМОВ, ПРЕДНАЗНАЧЕННАЯ ДЛЯ</h3>
 
           <ul class="work__collage_container">
             <li class="work__collage_item">
+              <h4 class="work__collage_item_title">Индивидуальных образов</h4>
               <img
                 alt="collage-element-1"
-                src="assets/image-1.jpeg"
+                src="assets/content-1.jpeg"
                 loading="lazy"
               />
             </li>
             <li class="work__collage_item">
+              <h4 class="work__collage_item_title">Кыз узатуу</h4>
               <img
                 alt="collage-element-2"
-                src="assets/image-2.jpeg"
+                src="assets/content-2.jpeg"
                 loading="lazy"
               />
             </li>
             <li class="work__collage_item">
+              <h4 class="work__collage_item_title">Пар</h4>
               <img
                 alt="collage-element-3"
-                src="assets/image-3.jpeg"
+                src="assets/content-3.jpeg"
                 loading="lazy"
               />
             </li>
             <li class="work__collage_item">
+              <h4 class="work__collage_item_title">Мужчин</h4>
               <img
                 alt="collage-element-4"
-                src="assets/image-4.jpeg"
+                src="assets/content-4.jpeg"
+                loading="lazy"
+              />
+            </li>
+            <li class="work__collage_item">
+              <h4 class="work__collage_item_title">Семейных образов</h4>
+              <img
+                alt="collage-element-4"
+                src="assets/content-5.jpeg"
+                loading="lazy"
+              />
+            </li>
+            <li class="work__collage_item">
+              <h4 class="work__collage_item_title">Девушеĸ</h4>
+              <img
+                alt="collage-element-4"
+                src="assets/content-6.jpeg"
+                loading="lazy"
+              />
+            </li>
+            <li class="work__collage_item">
+              <h4 class="work__collage_item_title">Детей</h4>
+              <img
+                alt="collage-element-4"
+                src="assets/content-7.jpeg"
                 loading="lazy"
               />
             </li>
           </ul>
-        </section> -->
+        </section>
 
         <section class="details__section">
           <div class="container">
@@ -202,5 +246,20 @@
         </section>
       </div>
     </main>
+    <script>
+      const buttons = document.querySelectorAll(
+        ".test_change_font_buttons button",
+      );
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document.body.className = "";
+
+          const font = btn.dataset.font;
+
+          document.body.classList.add(`font-${font}`);
+        });
+      });
+    </script>
   </body>
 </html>
