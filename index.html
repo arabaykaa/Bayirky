@@ -23,6 +23,10 @@ family=Open+Sans:wght@300..700&
 display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Old+Standard+TT&display=swap"
+      rel="stylesheet"
+    />
     <title>BAYIRKY</title>
   </head>
   <body id="top">
@@ -58,7 +62,7 @@ display=swap"
           </div>
           <a href="#info" class="main__next_btn no_select">записаться</a>
           <ul class="test_change_font_buttons no_select">
-            <li><button data-font="playfair">Playfair</button></li>
+            <!-- <li><button data-font="playfair">Playfair</button></li>
             <li><button data-font="ptserif">PT Serif</button></li>
             <li><button data-font="montserrat">Montserrat</button></li>
             <li><button data-font="cormorant">Cormorant</button></li>
@@ -66,8 +70,18 @@ display=swap"
             <li><button data-font="opensans">Open Sans</button></li>
             <li><button data-font="lora">Lora</button></li>
             <li><button data-font="rubik">Rubik</button></li>
-            <li><button data-font="manrope">Manrope</button></li>
+            <li><button data-font="manrope">Manrope</button></li> -->
+            <li><button data-font="daydreaming">Daydreaming</button></li>
+            <li><button data-font="involve">Involve</button></li>
+            <li><button data-font="oldstandard">Old Standard</button></li>
+            <li><button data-font="roboto">Roboto</button></li>
           </ul>
+          <div class="bg_switch_buttons no_select">
+            <button data-bg="default" style="background-color: aqua">
+              Default BG
+            </button>
+            <button data-bg="red" style="background-color: aqua">Red BG</button>
+          </div>
         </div>
 
         <section id="work" class="container work__container">
@@ -247,9 +261,20 @@ display=swap"
       </div>
     </main>
     <script>
+      const bgButtons = document.querySelectorAll(".bg_switch_buttons button");
       const buttons = document.querySelectorAll(
         ".test_change_font_buttons button",
       );
+
+      bgButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document.body.classList.remove("bg-default", "bg-red");
+
+          const bg = btn.dataset.bg;
+
+          document.body.classList.add(`bg-${bg}`);
+        });
+      });
 
       buttons.forEach((btn) => {
         btn.addEventListener("click", () => {

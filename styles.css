@@ -1,3 +1,45 @@
+@font-face {
+  font-family: "Daydreaming";
+  src: url("fonts/Daydreaming-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Involve";
+  src: url("fonts/Involve-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Involve";
+  src: url("fonts/Involve-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Involve";
+  src: url("fonts/Involve-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Involve";
+  src: url("fonts/Involve-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Old Standard";
+  src: url("fonts/OldStandard-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Old Standard";
+  src: url("fonts/OldStandard-Bold.otf");
+  font-weight: 700;
+}
+
 :root {
   --text-main: #0f172a;
   --text-muted: #64748b;
@@ -71,6 +113,22 @@ body.font-rubik {
 body.font-manrope {
   font-family: "Manrope", sans-serif;
 }
+
+body.font-daydreaming {
+  font-family: "Daydreaming", cursive;
+}
+
+body.font-involve {
+  font-family: "Involve", sans-serif;
+}
+
+body.font-oldstandard {
+  font-family: "Old Standard", serif;
+}
+
+body.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
 /* фффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффф */
 /* фффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффф */
 /* фффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффффф */
@@ -132,15 +190,30 @@ a {
 
 .main__bg_text_block {
   min-height: 100dvh;
-  /* background-color: rgba(236, 235, 232, 1); */
-  /* background: #fff; */
+
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
     url("assets/new-bg.webp");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  background-attachment: fixed; /* 🔥 ВОТ ЭТО КЛЮЧ */
+
   color: white;
+}
+
+.bg-red .main__bg_text_block {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("assets/red-bg.jpeg");
+}
+
+.bg_switch_buttons {
+  position: absolute;
+  top: 15%;
+  left: 4%;
 }
 
 /* @media (max-width: 500px) {
@@ -277,13 +350,13 @@ a {
   text-align: center;
   padding-top: 1rem;
   margin: 0;
-  font-weight: 700;
+  /* font-weight: 100; */
   color: #d8b66e;
   text-transform: uppercase;
   /* font-family: "Playfair Display", serif; */
   text-shadow:
-    0 0 1px #ffffff57,
-    0 0 2px #ffffff57;
+    0 0 1px #00000080,
+    0 0 2px #00000080;
 }
 
 .main__next_btn {
