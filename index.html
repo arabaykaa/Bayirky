@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ky">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,30 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?
-family=Inter+Tight:ital,wght@0,100..900;1,100..900&
-family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&
-family=Playfair+Display:ital,wght@0,400..900;1,400..900&
-family=Montserrat:wght@300;400;500;600;700&
-family=Rubik:ital,wght@0,300..900;1,300..900&
-family=Roboto:wght@300;400;500;700&
-family=Manrope:wght@200..800&
-family=Cormorant:ital,wght@0,300..700;1,300..700&
-family=Lora:ital,wght@0,400..700;1,400..700&
-family=Open+Sans:wght@300..700&
-display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Old+Standard+TT&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..900&display=swap"
       rel="stylesheet"
     />
     <title>BAYIRKY</title>
@@ -42,18 +19,19 @@ display=swap"
       <a class="whatsapp_btn" href="https://wa.me/709631003">
         <img
           alt="send-to-wh"
-          src="assets/whatsapp.png"
+          src="assets/whatsapp.webp"
           width="36"
-          height="auto"
+          height="36"
+          decoding="async"
         />
       </a>
 
       <div class="main__bg_text_block">
         <div class="container main__header">
           <ul class="main__header_lang_container no_select">
-            <li><a href="/kr" class="main__header_lang_link">кр</a></li>
-            <li><a href="/ru" class="main__header_lang_link">ру</a></li>
-            <li><a href="/en" class="main__header_lang_link">en</a></li>
+            <li><a href="index.html" class="main__header_lang_link">кр</a></li>
+            <li><a href="ru.html" class="main__header_lang_link">ру</a></li>
+            <li><a href="en.html" class="main__header_lang_link">en</a></li>
           </ul>
         </div>
 
@@ -61,41 +39,19 @@ display=swap"
           <div class="main__logo_des_container no_select">
             <img
               alt="logo"
-              src="assets/logo-without-bg.png"
+              src="assets/logo-without-bg.webp"
               class="main__logo"
+              fetchpriority="high"
+              decoding="async"
             />
-            <h6 class="main__desc">Окунись в мир кочевников</h6>
             <h6 class="main__desc">Көчмөндөрдүн дүйнөсүнө сүңгү</h6>
-            <h6 class="main__desc">Immerse yourself in the world of nomads</h6>
           </div>
-          <a href="#info" class="main__next_btn no_select">записаться</a>
-          <ul class="test_change_font_buttons no_select">
-            <!-- <li><button data-font="playfair">Playfair</button></li>
-            <li><button data-font="ptserif">PT Serif</button></li>
-            <li><button data-font="montserrat">Montserrat</button></li>
-            <li><button data-font="cormorant">Cormorant</button></li>
-            <li><button data-font="roboto">Roboto</button></li>
-            <li><button data-font="opensans">Open Sans</button></li>
-            <li><button data-font="lora">Lora</button></li>
-            <li><button data-font="rubik">Rubik</button></li>
-            <li><button data-font="manrope">Manrope</button></li> -->
-            <li><button data-font="daydreaming">Daydreaming</button></li>
-            <li><button data-font="involve">Involve</button></li>
-            <li><button data-font="oldstandard">Old Standard</button></li>
-            <li><button data-font="roboto">Roboto</button></li>
-          </ul>
-          <div class="bg_switch_buttons no_select">
-            <button data-bg="default" style="background-color: aqua">
-              Default BG
-            </button>
-            <button data-bg="red" style="background-color: aqua">Red BG</button>
-          </div>
+          <a href="#info" class="main__next_btn no_select">Жазылуу</a>
         </div>
 
         <section id="work" class="container work__container">
           <div class="work__header">
-            <p class="work__eyebrow">Коллекция костюмов</p>
-            <h3 class="work__main_title">Предназначенная для</h3>
+            <p class="work__main_title">Кийим коллекциясы</p>
             <div class="work__divider">
               <span class="work__divider_gem">◆</span>
             </div>
@@ -106,13 +62,15 @@ display=swap"
               <div class="work__card_inner">
                 <img
                   alt="collage-element-1"
-                  src="assets/content-1.jpeg"
+                  src="assets/compressed/content-1_com.webp"
+                  data-fullsrc="assets/content-1.webp"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="800"
                 />
                 <div class="work__card_overlay">
-                  <h4 class="work__collage_item_title">
-                    Индивидуальных образов
-                  </h4>
+                  <h4 class="work__collage_item_title">Жекече образдар үчүн</h4>
                 </div>
               </div>
             </li>
@@ -120,8 +78,12 @@ display=swap"
               <div class="work__card_inner">
                 <img
                   alt="collage-element-2"
-                  src="assets/content-2.jpeg"
+                  src="assets/compressed/content-2_com.webp"
+                  data-fullsrc="assets/content-2.webp"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="800"
                 />
                 <div class="work__card_overlay">
                   <h4 class="work__collage_item_title">Кыз узатуу</h4>
@@ -132,11 +94,15 @@ display=swap"
               <div class="work__card_inner">
                 <img
                   alt="collage-element-3"
-                  src="assets/content-3.jpeg"
+                  src="assets/compressed/content-3_com.webp"
+                  data-fullsrc="assets/content-3.webp"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="800"
                 />
                 <div class="work__card_overlay">
-                  <h4 class="work__collage_item_title">Пар</h4>
+                  <h4 class="work__collage_item_title">Жубайлар</h4>
                 </div>
               </div>
             </li>
@@ -144,11 +110,15 @@ display=swap"
               <div class="work__card_inner">
                 <img
                   alt="collage-element-4"
-                  src="assets/content-4.jpeg"
+                  src="assets/compressed/content-4_com.webp"
+                  data-fullsrc="assets/content-4.webp"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="800"
                 />
                 <div class="work__card_overlay">
-                  <h4 class="work__collage_item_title">Мужчин</h4>
+                  <h4 class="work__collage_item_title">Эркектер</h4>
                 </div>
               </div>
             </li>
@@ -156,11 +126,15 @@ display=swap"
               <div class="work__card_inner">
                 <img
                   alt="collage-element-5"
-                  src="assets/content-5.jpeg"
+                  src="assets/compressed/content-5_com.webp"
+                  data-fullsrc="assets/content-5.webp"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="800"
                 />
                 <div class="work__card_overlay">
-                  <h4 class="work__collage_item_title">Семейных образов</h4>
+                  <h4 class="work__collage_item_title">Үй-бүлөлүк образдар</h4>
                 </div>
               </div>
             </li>
@@ -168,11 +142,15 @@ display=swap"
               <div class="work__card_inner">
                 <img
                   alt="collage-element-6"
-                  src="assets/content-6.jpeg"
+                  src="assets/compressed/content-6_com.webp"
+                  data-fullsrc="assets/content-6.webp"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="800"
                 />
                 <div class="work__card_overlay">
-                  <h4 class="work__collage_item_title">Девушек</h4>
+                  <h4 class="work__collage_item_title">Кыз-келиндер</h4>
                 </div>
               </div>
             </li>
@@ -180,11 +158,15 @@ display=swap"
               <div class="work__card_inner">
                 <img
                   alt="collage-element-7"
-                  src="assets/content-7.jpeg"
+                  src="assets/compressed/content-7_com.webp"
+                  data-fullsrc="assets/content-7.webp"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="800"
                 />
                 <div class="work__card_overlay">
-                  <h4 class="work__collage_item_title">Детей</h4>
+                  <h4 class="work__collage_item_title">Балдар</h4>
                 </div>
               </div>
             </li>
@@ -196,54 +178,53 @@ display=swap"
             <div class="details__wrapper">
               <div class="details__top">
                 <div class="details__heading">
-                  <span class="details__eyebrow">BAIYRKY</span>
                   <h2 class="details__title">
-                    Условия съёмки и важная информация
+                    Съёмка шарттары жана маанилүү маалымат
                   </h2>
                   <p class="details__desc">
-                    Выберите подходящий формат съёмки и ознакомьтесь с локацией,
-                    временем работы и условиями записи.
+                    Съёмканын ылайыктуу форматын тандап, локация, иш убактысы
+                    жана жазылуу шарттары менен таанышыңыз.
                   </p>
                 </div>
               </div>
 
               <div class="details__grid">
                 <section class="info__card">
-                  <h3 class="info__title">Студийная съёмка BAIYRKY</h3>
+                  <h3 class="info__title">BAIYRKY студиясында съёмка</h3>
                   <p class="info__subtitle">
-                    Костюм и аренда студии включены в стоимость
+                    Кийим жана студия ижарасы баага кирет
                   </p>
 
                   <ul class="info__list">
-                    <li>Индивидуальная съёмка — 6000 сом</li>
-                    <li>Парная съёмка — 8000 сом</li>
+                    <li>Жеке съёмка — 6000 сом</li>
+                    <li>Жуптук съёмка — 8000 сом</li>
                   </ul>
 
-                  <h4 class="info__small_title">Дополнительные участники</h4>
+                  <h4 class="info__small_title">Кошумча катышуучулар</h4>
                   <ul class="info__list">
-                    <li>Взрослый — +3 000 сом за человека</li>
-                    <li>Ребёнок до 12 лет — +2 000 сом за человека</li>
-                    <li>Дети до 3 лет — +1 000 сом</li>
-                    <li>Время - 1 час съёмок</li>
+                    <li>Чоң киши — ар бир адамга +3 000 сом</li>
+                    <li>12 жашка чейинки бала — ар бир адамга +2 000 сом</li>
+                    <li>3 жашка чейинки балдар — +1 000 сом</li>
+                    <li>Убакыт - 1 саат съёмка</li>
                   </ul>
                 </section>
 
                 <section class="info__card">
                   <h3 class="info__title">
-                    Если съёмка проходит не в студии BAIYRKY
+                    Эгер съёмка BAIYRKY студиясынан тышкары өтсө
                   </h3>
                   <p class="info__subtitle">
-                    Костюмы забираются в другую локацию
+                    Кийимдер башка локацияга алынып чыгат
                   </p>
 
                   <p class="info__text">
-                    В этом случае действует отдельная стоимость аренды костюмов:
+                    Бул учурда кийим ижарасынын өзүнчө баасы колдонулат:
                   </p>
 
                   <ul class="info__list">
-                    <li>Женские костюмы — от 3 000 до 5 000 сом</li>
-                    <li>Мужские костюмы — от 3 000 до 5 000 сом</li>
-                    <li>Детские костюмы — от 1 000 до 3 000 сом</li>
+                    <li>Аялдардын кийими — 3 000ден 5 000 сомго чейин</li>
+                    <li>Эркектердин кийими — 3 000ден 5 000 сомго чейин</li>
+                    <li>Балдардын кийими — 1 000ден 3 000 сомго чейин</li>
                   </ul>
                 </section>
               </div>
@@ -251,9 +232,9 @@ display=swap"
               <footer id="info" class="site__footer">
                 <div class="site__footer_card">
                   <span class="site__footer_label">Локация</span>
-                  <h3 class="site__footer_title">Адрес студии</h3>
+                  <h3 class="site__footer_title">Студиянын дареги</h3>
                   <p class="site__footer_text">
-                    Жибек Жолу 625/1, Кыргыз фильм, 1 этаж
+                    Жибек Жолу 625/1, Кыргыз фильм, 1-кабат
                   </p>
                   <div class="site__footer_btn_container">
                     <a
@@ -262,12 +243,13 @@ display=swap"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Построить маршрут
+                      Маршрут түзүү
                       <img
                         alt="send-to-wh"
-                        src="assets/location.png"
+                        src="assets/location.webp"
                         width="24"
-                        height="auto"
+                        height="24"
+                        decoding="async"
                       />
                     </a>
                     <a
@@ -276,26 +258,31 @@ display=swap"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Записаться
+                      Жазылуу
                       <img
                         alt="send-to-wh"
-                        src="assets/whatsapp.png"
+                        src="assets/whatsapp.webp"
                         width="24"
-                        height="auto"
+                        height="24"
+                        decoding="async"
                       />
                     </a>
                   </div>
                 </div>
 
                 <div class="site__footer_card">
-                  <span class="site__footer_label">Время работы</span>
-                  <h3 class="site__footer_title">Режим работы</h3>
+                  <span class="site__footer_label">Иш убактысы</span>
+                  <h3 class="site__footer_title">Иш режими</h3>
                   <p class="site__footer_text">
-                    Ежедневно с 10:00 до 21:00 (без выходных)
+                    Күн сайын 10:00дөн 21:00гө чейин (дем алышсыз)
                   </p>
-                  <p class="site__footer_text">Перерыв на обед: 13:00–14:00</p>
+                  <p class="site__footer_text">Түшкү тыныгуу: 13:00–14:00</p>
                   <p class="site__footer_text">
-                    Работа по предварительной записи
+                    Алдын ала жазылуу менен иштейт
+                    <br />
+                    <span class="site__footer_note">
+                      (паспорттун болушу милдеттүү)
+                    </span>
                   </p>
                 </div>
               </footer>
@@ -305,30 +292,49 @@ display=swap"
       </div>
     </main>
     <script>
-      const bgButtons = document.querySelectorAll(".bg_switch_buttons button");
-      const buttons = document.querySelectorAll(
-        ".test_change_font_buttons button",
-      );
+      (() => {
+        const isMobile = window.matchMedia("(max-width: 500px)").matches;
 
-      bgButtons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          document.body.classList.remove("bg-default", "bg-red");
+        const progressiveImages =
+          document.querySelectorAll("img[data-fullsrc]");
 
-          const bg = btn.dataset.bg;
+        progressiveImages.forEach((image) => {
+          const fullSource = image.dataset.fullsrc;
+          if (!fullSource) return;
 
-          document.body.classList.add(`bg-${bg}`);
+          const fullImage = new Image();
+          fullImage.decoding = "async";
+          fullImage.src = fullSource;
+          fullImage.onload = () => {
+            image.classList.add("is-swapping");
+            image.addEventListener(
+              "load",
+              () => {
+                image.classList.remove("is-swapping");
+              },
+              { once: true },
+            );
+            image.src = fullSource;
+          };
         });
-      });
 
-      buttons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          document.body.className = "";
+        if (isMobile) {
+          const fullMobileBackground = new Image();
+          fullMobileBackground.decoding = "async";
+          fullMobileBackground.src = "assets/red-bg.webp";
+          fullMobileBackground.onload = () => {
+            document.body.classList.add("bg-full-mobile");
+          };
+          return;
+        }
 
-          const font = btn.dataset.font;
-
-          document.body.classList.add(`font-${font}`);
-        });
-      });
+        const fullBackground = new Image();
+        fullBackground.decoding = "async";
+        fullBackground.src = "assets/new-bg.webp";
+        fullBackground.onload = () => {
+          document.body.classList.add("bg-full");
+        };
+      })();
     </script>
   </body>
 </html>
